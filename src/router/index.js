@@ -28,6 +28,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/SingleEvent.vue"),
   },
+  {
+    path: "/coindesk",
+    name: "CoinDesk",
+    component: () => import("../views/CoinDesk.vue"),
+  },
 ];
 
 const router = new VueRouter({
